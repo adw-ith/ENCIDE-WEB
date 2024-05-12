@@ -1,0 +1,88 @@
+*
+{
+    margin: 0;
+}
+.hero
+{
+    display: grid;
+    grid-template-areas: "left right right";
+    background:url('images/bgmain.png');
+   height: 100%;
+}
+.hero-left
+{
+    grid-area:left;
+    display: flex;
+  padding-left: 4rem;
+   align-items: center;
+}
+.hero-left div{
+    font-family: monospace;
+    font-size: 2.5rem;
+}
+.hero-left div div{
+    margin-top: 2rem;
+    border: solid .2rem #9A00B3;
+    color: white;
+    border-radius: .5rem;
+    padding: .3rem;
+    font-size: medium;
+    background: none;
+    width:fit-content;
+}
+.hero-left div div button{
+   background: none;
+   color: white;
+   border: none;
+   font-size: large;
+   padding-left: 1.8rem;
+   padding-right: 1.8rem;
+}
+.hero-left div div button:hover 
+{
+    background: #9A00B3 ;
+}
+.hero-right
+{
+   /* position: absolute;
+   right: 0px;
+   height: 100%;
+   width: 50%; */
+   grid-area: right;
+    background: url('images/encide.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.hero-right iframe
+{
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width: 900px) {
+    .hero
+{
+   
+    grid-template-areas: "right"
+                       
+                        "left";
+   
+}
+.hero-left
+{
+
+    padding:2rem ;
+}
+.hero-left div{
+    
+    font-size: 2rem;
+}
+.hero-right
+{
+    height: 60dvh;
+}
+.hero-right iframe
+{
+    width: 100%;
+    height: 100%;
+}
+}
