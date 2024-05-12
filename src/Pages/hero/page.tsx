@@ -16,5 +16,6 @@ export default function Hero()
        <div className="hero-right" >
        <iframe src="https://my.spline.design/particles-efe9e3a9a7cc30fcfe2152e03f85e1e9/" frameborder="0"  ></iframe>
        </div>
+      
     </div>
 }
