@@ -62,15 +62,17 @@
     .hero
 {
    
-    grid-template-areas: "right"
-                       
-                        "left";
+    grid-template-areas: "right";
    
 }
 .hero-left
 {
-
-    padding:2rem ;
+grid-area: right;
+   display: flex;
+   justify-content: center;
+   padding-left: 1rem;
+    position: relative;
+    z-index: 100;
 }
 .hero-left div{
     
@@ -78,11 +80,8 @@
 }
 .hero-right
 {
-    height: 60dvh;
+  opacity: .5;
+    background: none;
 }
-.hero-right iframe
-{
-    width: 100%;
-    height: 100%;
-}
+
 }
