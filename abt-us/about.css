@@ -1,0 +1,174 @@
+*{
+    margin:0px;
+    box-sizing: border-box;
+    padding:0px;
+    background:#121212;
+    font-size: 24px;
+    font-family: Inter;
+    color: aliceblue;
+}
+
+.Abt_Us{
+    margin:3rem;
+    padding-left:2rem;
+    padding-right:2rem;
+}
+
+.abt_us_1{
+    margin-bottom:5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.abt_us_cont{
+    width:55%;
+    margin-right:40px;
+}
+
+.abt_us_cont h1{
+    font-size:40px;
+    font-weight: 550;
+    margin-bottom:2rem;
+}
+
+.pic{
+    width: 494px;
+    height: 294px;
+    top: 124px;
+    left: 1101px;
+    gap: 0px;
+}
+
+
+.back{
+    position:absolute;
+    width: 460px;
+    height: 260px;
+    left: 1135px;
+    top: 158px;
+    background: #D9D9D9;
+    border-radius: 5px;
+}
+
+.front{
+    position: absolute;
+    width: 460px;
+    padding:0px;
+    height: 260px;
+    left: 1101px;
+    right:-96px;
+    top: 124px;
+    background-image: url(d1.jpg);
+    background-size: cover;
+    filter: drop-shadow(0px 6px 40px #000000);
+    border-radius: 10px;
+}
+
+.abt_us_2{
+    margin-top:2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.mission{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:3.5rem;
+    top: 559px;
+    left: 193px;
+    background: rgba(219, 158, 229, 0.9);
+    border-radius: 200px;
+    text-align: center;
+}
+
+#rkt-icon {
+    margin-top:-2rem;
+    margin-bottom:0.6rem;
+    width: 72px;
+    height: 68px;
+    background-image: url(Rocket.png);
+    background-color:rgba(219, 158, 229, 0.1) ;
+    background-blend-mode: multiply;
+}
+
+
+.mission h2{
+    width: 248px;
+    height: 44px;
+    margin-bottom: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    background-color: transparent;
+    color: #1A021E;
+}
+
+.mission p{
+    width: 389px;
+    height: 116px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: left;
+    background-color: transparent;
+    color: #000000;
+}
+
+
+
+
+.vision{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:3.5rem;
+    top: 559px;
+    left: 193px;
+    background: rgba(219, 158, 229, 0.9);
+    border-radius: 200px;
+    text-align: center;
+}
+
+#eye-icon {
+    margin-top:-2rem;
+    margin-bottom:0.6rem;
+    width: 72px;
+    height: 68px;
+    background-image: url(Eye.png);
+    background-color:rgba(219, 158, 229, 0.1) ;
+    background-blend-mode: multiply;
+    border-radius: 40%;
+}
+
+/* OUR MISSION */
+.vision h2{
+    width: 248px;
+    height: 44px;
+    margin-bottom: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    background-color: transparent;
+    color: #1A021E;
+}
+
+.vision p{
+    width: 389px;
+    height: 116px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: left;
+    background-color: transparent;
+    color: #000000;
+}
+
