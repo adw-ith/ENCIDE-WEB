@@ -1,9 +1,8 @@
 import "./App.css";
-import Hero from "./hero/page";
+import Practice from "./Pages/Practice/Practice"
 
 function App() {
-  return <div style={{ height:'100dvh' }}><Hero/>
- </div>;
+  return <><Practice/></>;
 }
 
 export default App;
