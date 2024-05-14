@@ -8,6 +8,7 @@ export default {
     extend: {
       colors:{
         practicebg: "rgba(219, 158, 229, 0.3)",
+        faqbg: "rgba(219, 158, 229, 0.25)",
         cardbg: "rgba(42, 0, 49, 0.7)",
         cardshadow:"rgba(171, 22, 165, 0.81)",
       },

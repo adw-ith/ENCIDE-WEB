@@ -1,12 +1,14 @@
-import React from "react"
+
+import axios from "axios"
+import React, { useEffect } from "react"
 export default function Hero()
 {
+   
     return <div className="hero">
-    
     <div className="hero-left" >
         <div style={{ color:'white' }}>
             <h1 className=" text-7xl font-mono font-semibold" style={{ maxWidth:'26rem' }}>CODE WHAT YOU CANT</h1>
-           <div> <button className="about-us-text" style={{ display:'flex',alignItems:'center' }}>ABOUT US <i style={{ paddingTop:'.3rem',paddingLeft:'.3rem' }}>
+           <div> <button className="about-us-text rounded-sm" style={{ display:'flex',alignItems:'center' }}>ABOUT US <i style={{ paddingTop:'.3rem',paddingLeft:'.3rem' }}>
             <img width="32" height="32" src="https://img.icons8.com/windows/32/FFFFFF/long-arrow-right.png" alt="long-arrow-right"/></i></button></div>
         </div>
     </div>
