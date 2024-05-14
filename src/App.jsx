@@ -9,7 +9,7 @@ function App() {
  const[load,setLoad]=useState(true)
   return <>
   {load&& <Loader/>}
-    <Hero loading={()=>setLoad(true)}/>
+    <Hero loading={()=>setLoad(false)}/>
   <Practice/>
   <Faqnews/></>;
 }
