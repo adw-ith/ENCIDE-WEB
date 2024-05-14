@@ -1,9 +1,13 @@
 
 import axios from "axios"
+
 import React, { useEffect } from "react"
-export default function Hero()
+
+export type Props={
+    loading:()=>void;
+}
+export default function Hero(props:Props)
 {
-   
     return <div className="hero">
     <div className="hero-left" >
         <div style={{ color:'white' }}>
@@ -13,7 +17,7 @@ export default function Hero()
         </div>
     </div>
        <div className="hero-right" >
-       <iframe src="https://my.spline.design/particles-efe9e3a9a7cc30fcfe2152e03f85e1e9/" frameborder="0"  ></iframe>
+       <iframe onLoad={props.loading} src="https://my.spline.design/particles-efe9e3a9a7cc30fcfe2152e03f85e1e9/"   ></iframe>
        </div>
       
     </div>
