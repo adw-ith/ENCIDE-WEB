@@ -1,0 +1,206 @@
+*{
+    margin:0px;
+    box-sizing: border-box;
+    padding:0px;
+    background:#121212;
+    font-size: 24px;
+    font-family: Inter;
+    color: aliceblue;
+}
+
+.abt_us_cont h1{
+    font-size:40px;
+    font-weight: 550;
+    margin-bottom:2rem;
+}
+
+.pic{
+    min-width:500px;
+    max-width:500px;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.back{
+    height:260px;
+    min-width:460px;
+    margin-bottom:-15%;
+    background-color: #eeeeee;
+    border-radius:10px;
+}
+
+.front{
+    height:260px;
+    min-width:460px;
+    background-image:url(d1.jpg);
+    background-size: cover;
+    filter: drop-shadow(0px 6px 40px #00000078);
+    border-radius: 10px;
+    offset:black;
+    margin-left:-100%;
+}
+
+.mission{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:3.5rem;
+    top: 559px;
+    left: 193px;
+    background: rgba(219, 158, 229, 0.9);
+    border-radius: 200px;
+    text-align: center;
+}
+.rkt_icon {
+    margin-top:-2rem;
+    margin-bottom:0.6rem;
+    width: 72px;
+    height: 68px;
+    background-image: url(Rocket.png);
+    background-color:rgba(219, 158, 229, 0.1) ;
+    background-blend-mode: multiply;
+}
+
+.mission h2{
+    width: 248px;
+    height: 44px;
+    margin-bottom: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    background-color: transparent;
+    color: #1A021E;
+}
+
+.mission p{
+    width: 389px;
+    height: 116px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: left;
+    background-color: transparent;
+    color: #000000;
+}
+
+
+
+.vision{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:3.5rem;
+    top: 559px;
+    left: 193px;
+    background: rgba(219, 158, 229, 0.9);
+    border-radius: 200px;
+    text-align: center;
+}
+
+.eye_icon {
+    margin-top:-2rem;
+    margin-bottom:0.6rem;
+    width: 72px;
+    height: 68px;
+    background-image: url(Eye.png);
+    background-color:rgba(219, 158, 229, 0.1) ;
+    background-blend-mode: multiply;
+    border-radius: 40%;
+}
+
+/* OUR MISSION */
+.vision h2{
+    width: 248px;
+    height: 44px;
+    margin-bottom: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    background-color: transparent;
+    color: #1A021E;
+}
+
+.vision p{
+    width: 389px;
+    height: 116px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: left;
+    background-color: transparent;
+    color: #000000;
+}
+
+
+@media(min-width:1440px){
+    
+
+.Abt_Us{
+    margin:3rem;
+    padding-left:2rem;
+    padding-right:2rem;
+}
+
+.abt_us_1{
+    margin-bottom:5rem;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    
+}
+
+.abt_us_2{
+    margin-top:2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+}
+
+@media(max-width:1439px){
+    .Abt_Us{
+        padding:1.5rem;
+        display: flex;
+        flex-direction:column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .abt_us_1{
+        display: flex;
+        width:80%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items:center;
+        text-align: center;
+    }
+
+    .abt_us_cont p{
+        text-align:justify;
+        margin-bottom:2rem;
+    }
+
+    .pic{
+        margin-bottom:5rem;
+    }
+
+    .mission{
+        margin-bottom:3rem;
+    }
+}
