@@ -8,23 +8,6 @@
     color: aliceblue;
 }
 
-.Abt_Us{
-    margin:3rem;
-    padding-left:2rem;
-    padding-right:2rem;
-}
-
-.abt_us_1{
-    margin-bottom:5rem;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.abt_us_cont{
-    width:55%;
-    margin-right:40px;
-}
-
 .abt_us_cont h1{
     font-size:40px;
     font-weight: 550;
@@ -32,46 +15,32 @@
 }
 
 .pic{
-    width: 494px;
-    height: 294px;
-    top: 124px;
-    left: 1101px;
-    gap: 0px;
+    min-width:500px;
+    max-width:500px;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
 }
-
-
 .back{
-    position:absolute;
-    width: 460px;
-    height: 260px;
-    left: 1135px;
-    top: 158px;
-    background: #D9D9D9;
-    border-radius: 5px;
+    height:260px;
+    min-width:460px;
+    margin-bottom:-15%;
+    background-color: #eeeeee;
+    border-radius:10px;
 }
 
 .front{
-    position: absolute;
-    width: 460px;
-    padding:0px;
-    height: 260px;
-    left: 1101px;
-    right:-96px;
-    top: 124px;
-    background-image: url(d1.jpg);
+    height:260px;
+    min-width:460px;
+    background-image:url(d1.jpg);
     background-size: cover;
-    filter: drop-shadow(0px 6px 40px #000000);
+    filter: drop-shadow(0px 6px 40px #00000078);
     border-radius: 10px;
+    offset:black;
+    margin-left:-100%;
 }
-
-.abt_us_2{
-    margin-top:2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
 
 .mission{
     display: flex;
@@ -84,8 +53,7 @@
     border-radius: 200px;
     text-align: center;
 }
-
-#rkt-icon {
+.rkt_icon {
     margin-top:-2rem;
     margin-bottom:0.6rem;
     width: 72px;
@@ -94,7 +62,6 @@
     background-color:rgba(219, 158, 229, 0.1) ;
     background-blend-mode: multiply;
 }
-
 
 .mission h2{
     width: 248px;
@@ -122,7 +89,6 @@
 
 
 
-
 .vision{
     display: flex;
     flex-direction: column;
@@ -136,7 +102,7 @@
     text-align: center;
 }
 
-#eye-icon {
+.eye_icon {
     margin-top:-2rem;
     margin-bottom:0.6rem;
     width: 72px;
@@ -172,3 +138,69 @@
     color: #000000;
 }
 
+
+@media(min-width:1440px){
+    
+
+.Abt_Us{
+    margin:3rem;
+    padding-left:2rem;
+    padding-right:2rem;
+}
+
+.abt_us_1{
+    margin-bottom:5rem;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    
+}
+
+.abt_us_2{
+    margin-top:2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+
+}
+
+@media(max-width:1439px){
+    .Abt_Us{
+        padding:1.5rem;
+        display: flex;
+        flex-direction:column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .abt_us_1{
+        display: flex;
+        width:80%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items:center;
+        text-align: center;
+    }
+
+    .abt_us_cont p{
+        text-align:justify;
+        margin-bottom:2rem;
+    }
+
+    .pic{
+        margin-bottom:5rem;
+    }
+
+    .mission{
+        margin-bottom:3rem;
+    }
+}
