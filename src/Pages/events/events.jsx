@@ -1,23 +1,22 @@
-import styles from "./EventComponent.css";
-import image from "./image.png";
+import "./events.css";
+import image from './image.png';
 
 function EventComponent(){
     return(
-        <>
-        <section className={styles.evnts}>
-        <div className={styles.top}>
-            <div className={styles.heading}>
-                <p className={styles.title}>EVENTS</p>
-                <p className={styles.subtitle}>Our Upcoming Events</p>
+        <section className='evnts'>
+        <div className='top'>
+            <div className='heading'>
+                <p className='title'>EVENTS</p>
+                <p className='subtitle'>Our Upcoming Events</p>
             </div>
-            <div className={styles.prevEvents}>
+            <div className='prevEvents'>
                 PREVIOUS EVENTS →
             </div>
         </div>
-        <div className={styles.outer}>
-            <div className={styles.inner}>
-            <img className={styles.image} src={image} alt="image.png"></img>
-                <div className={styles.innertxt}>
+        <div className='outer'>
+            <div className='inner'>
+            <img className='image' src={image}alt='image.png'></img>
+                <div className='innertxt'>
                     <p><b>Event Name : </b> DAWN 1.0</p>
                     <br></br>
                     <p><b>Date :</b> 22-05-2023</p>
@@ -29,13 +28,11 @@ function EventComponent(){
                     <br></br>
                     <p><b>Register here :</b> link</p>
                     <br></br>
-                    <p className={styles.desc}><b>Description :</b>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                    <p className='desc'><b>Description :</b>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
                 </div>
             </div>
         </div>
         </section>
-        </>
     );
 }
-
 export default EventComponent
