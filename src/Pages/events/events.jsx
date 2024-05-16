@@ -1,4 +1,4 @@
-import styles from "./EventComponent.module.css";
+import styles from "./EventComponent.css";
 import image from "./image.png";
 
 function EventComponent(){

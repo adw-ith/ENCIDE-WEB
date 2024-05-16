@@ -1,4 +1,4 @@
-*{
+/* *{
     margin:0px;
     box-sizing: border-box;
     padding:0px;
@@ -6,7 +6,7 @@
     font-size: 24px;
     font-family: Inter;
     color: aliceblue;
-}
+} */
 
 .abt_us_cont h1{
     font-size:40px;
@@ -144,8 +144,16 @@
 
 .Abt_Us{
     margin:3rem;
+    padding:0px;
     padding-left:2rem;
     padding-right:2rem;
+    
+    box-sizing: border-box;
+   
+    background:#121212;
+    font-size: 24px;
+    font-family: Inter;
+    color: aliceblue;
 }
 
 .abt_us_1{
@@ -180,6 +188,7 @@
         flex-wrap: nowrap;
         align-items: center;
         justify-content: center;
+        color: aliceblue;
     }
 
     .abt_us_1{

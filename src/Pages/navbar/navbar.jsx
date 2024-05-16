@@ -1,4 +1,4 @@
-import styles from "./navbar.module.css";
+import styles from "./navbar.css";
 import logo from "./encide.png";
 
 function NavComponent(){

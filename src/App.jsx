@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import AboutComponent from "./Pages/about/About";
 import Faqnews from "./Pages/Faqnews/page";
 import Hero from "./Pages/hero/page";
 import Loader from "./Pages/loader/page";
@@ -10,6 +11,8 @@ function App() {
   return <>
   {load&& <Loader/>}
     <Hero loading={()=>setLoad(false)}/>
+   <AboutComponent/>
+   
   <Practice/>
   <Faqnews/></>;
 }
