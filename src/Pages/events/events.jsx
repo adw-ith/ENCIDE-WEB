@@ -16,6 +16,7 @@ function EventComponent(){
         </div>
         <div className={styles.outer}>
             <div className={styles.inner}>
+            <img className={styles.image} src={image} alt="image.png"></img>
                 <div className={styles.innertxt}>
                     <p><b>Event Name : </b> DAWN 1.0</p>
                     <br></br>
@@ -30,7 +31,6 @@ function EventComponent(){
                     <br></br>
                     <p className={styles.desc}><b>Description :</b>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
                 </div>
-                <img className={styles.image} src={image} alt="image.png"></img>
             </div>
         </div>
         </section>
