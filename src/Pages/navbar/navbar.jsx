@@ -1,33 +1,41 @@
-import styles from "./navbar.css";
-import logo from "./encide.png";
+import './navbar.css';
+
 
 function NavComponent(){
+    const showSidebar = () => {
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.style.display = 'flex';
+    };
+    const hideSidebar= () => {
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.style.display = 'none';
+    }
+
     return(
         <>
-        <div className={styles.navbar}>
-            <div className={styles.logo}>ENCIDE
+        <nav className='navbar'>
+            <div className='logo'><a href="home">ENCIDE</a>
             </div>
-            <div className={styles.home}>HOME</div>
-            <div className={styles.about}>ABOUT</div>
-            <div className={styles.team}>TEAM</div>
-            <div className={styles.contact}>CONTACT</div>
-            <div className={styles.events}><div className={styles.in_bord}>EVENTS</div></div>
-        </div>
-        
-        <div className={styles.dropdown}>
-            <p>▽</p>
-            <button className={styles.dropbtn}></button>
-            <div className={styles.drop_cont}>
-                <a href="home">Home</a>
-                <a href="about">About</a>
-                <a href="team">Team</a>
-                <a href="contact">Contact</a>
-                <a href="Events">Events</a>
-            </div>
-            
-        </div>
+            <ul className='sidebar'>
+                <li onClick={hideSidebar}><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href='#'>HOME</a></li>
+                <li><a href='#'>ABOUT</a></li>
+                <li><a href='#'>TEAM</a></li>
+                <li><a href='#'>CONTACT</a></li>
+                <li><a href='#'>EVENTS</a></li>
+
+            </ul>
+            <ul className='nav_main'>
+                <li className='home cur hideOnMobile'><a href="home">HOME</a></li>
+                <li className='about cur hideOnMobile'><a href="#">ABOUT</a></li>
+                <li className='team cur hideOnMobile'><a href="#">TEAM</a></li>
+                <li className='contact cur hideOnMobile'><a href="#">CONTACT</a></li>
+                <li className='events hideOnMobile'><li className='in_bord'><a href="#">EVENTS</a></li></li>
+                <li className='menu_button' onClick={showSidebar}><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>            
+        </nav>
+    
         </>
     );
 }
-
 export default NavComponent
