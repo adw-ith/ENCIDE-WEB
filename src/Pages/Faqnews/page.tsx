@@ -27,11 +27,12 @@ export default function Faqnews()
             <div className=' p-4 pt-8 w-full '>
         <h1 className=' text-center text-5xl text-white font-semibold '>Contact Us</h1>
        <form action="" className='pb-8 p-3 text-white bg-transparent grid gap-3 shadow-2xl rounded-lg mt-5 '>
-        <input required placeholder='email' className='ease-in-out duration-500 focus:text-lg outline-none w-full  p-2 mt-8 bg-transparent hover:shadow-md' type="email" name="" id="" />
-       <input required placeholder='name'  className='ease-in-out duration-500 focus:text-lg outline-none w-full mt-4 p-2 bg-transparent hover:shadow-md' type="text" name="" id="" />
-       <input required placeholder='subject'  className='ease-in-out duration-500 focus:text-lg outline-none w-full mt-4 p-2 bg-transparent hover:shadow-md' type="text" name="" id="" />
+        <input required placeholder='email' className='ease-in-out duration-500 focus:text-lg outline-none w-full  p-2 py-4 mt-8 bg-transparent hover:shadow-md' type="email" name="" id="" />
+       <input required placeholder='name'  className='ease-in-out duration-500 focus:text-lg outline-none w-full mt-4 p-2 py-4  bg-transparent hover:shadow-md' type="text" name="" id="" />
+       <input required placeholder='subject'  className='ease-in-out duration-500 focus:text-lg outline-none w-full mt-4 p-2 py-4  bg-transparent hover:shadow-md' type="text" name="" id="" />
        <textarea required placeholder='your message' className='ease-in-out duration-500 focus:text-lg outline-none w-full min-h-24 p-2 mt-4 hover:shadow-md bg-transparent' name="" id="" ></textarea>
-       <button className=' rounded-md max-w-28 mt-6 h-14 bg-slate-800 hover:bg-slate-900 ease-in-out duration-500  text-lg font-semibold hover:text-2xl p-2 px-3 text-white' type="submit">submit</button></form>
+       <button className=' rounded-md max-w-28 mt-6 h-14 bg-slate-800 hover:bg-slate-900 ease-in-out duration-500  text-lg font-semibold hover:text-2xl p-2 px-3 text-white' type="submit">submit</button>
+       <p className=" pt-4 opacity-75">send us a hi</p></form>
         </div>
         </div>
 

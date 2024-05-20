@@ -13,7 +13,7 @@ function NavComponent(){
 
     return(
         <>
-        <nav className='navbar'>
+        <nav className='navbar fixed bg-black bg-opacity-60 backdrop-blur-md'>
             <div className='logo'><a href="home">ENCIDE</a>
             </div>
             <ul className='sidebar'>
