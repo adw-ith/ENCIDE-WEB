@@ -1,3 +1,7 @@
+*{
+    scroll-behavior: smooth;
+}
+
 .navbar{
     height:97px;
     width:100%;
@@ -7,8 +11,9 @@
     flex-wrap: nowrap;
     align-items: center;
     justify-content:space-between;
-    background-color: transparent;
-    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6); 
+    backdrop-filter: blur(12px);
+    position: fixed;
     z-index: 120;
     box-sizing: border-box;
     margin-bottom: 20px;
@@ -46,7 +51,7 @@
     background-color: rgba(154, 0, 179, 1);
     border:2px solid black;
     border-radius:5px;
-    animation:prev-btn 0.2s ease-in;
+    animation:prev-btn 0.2s ease-in-out;
     cursor:pointer;
 }
 
@@ -64,52 +69,82 @@
 }
 
 
-
-.cur:hover{
-    color:rgba(154, 0, 179, 1);   
+.cur:hover,.active{
+    color:rgb(201, 160, 207); 
 }
 
-nav li:first-child{
-        margin-right:auto;
-}
 
-.menu_button{
+
+.MobileNav{
+    background-color: rgba(0, 0, 0, 0.6); 
+    backdrop-filter: blur(15px);
+    padding:9px;
     display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    height:70px;
+    width:100%;
+    overflow-x:auto;
+    transition: all 0.5s ease-in-out,opacity 0.6s;
+    opacity:1;
 }
 
-.sidebar{
-    position: fixed;
-    padding: 1rem;
-    gap:1.2rem;
-    height:100vh;
-    width: 150px;
-    top:0px;
-    right:0px;
-    z-index:999;
-    background-color: rgba(0, 0, 0, 0.867);
-    box-shadow:0px -1px 20px white;
-    backdrop-filter: blur(0px);
-    display:none;
-    flex-direction:column;
-    justify-content: flex-start;
-    align-items: flex-start;
+.MobileNav.hidden{
+    opacity:0;
+}
+
+.nav_link{
+    overflow:hidden;
+    white-space: nowrap;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    
+}
+
+.nav_link:hover,.active{
+    .icons{
+        fill:#ECD7D7;
+        transition: 0.2s ease-in-out;
+        scale:1.2;
+    }
+    .icontext{
+        color:blueviolet;
+        transition: 0.2s ease-in-out;
+    }
+}
+
+
+
+.icons{
+    height:40%;
+    margin:0px;
+    padding:0px;
+    fill:blueviolet;
+}
+
+.icontext{
     color:white;
-    text-align:center;
 }
-.sidebar li,a{
-    width:100%;
-}
+
+
 
 @media (max-width:768px){
-    .hideOnMobile{
-        display:none;
+    .navbar{
+        display: none;
     }
-    .sidebar{
-        width:100%;
+    .MobileNav{
+        display:flex;
+        position:fixed;
+        z-index:900;
+        bottom:0%;
+        margin:0px;
     }
 
-    .menu_button{
-        display: block;
-    }
+
+    
 }
 

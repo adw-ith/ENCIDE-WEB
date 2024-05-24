@@ -8,7 +8,7 @@ export type Props={
 }
 export default function Hero(props:Props)
 {
-    return <div className="hero">
+    return <div id='home' className="hero">
     <div className="hero-left" >
         <div style={{ color:'white' }}>
             <h1 className=" text-7xl font-mono font-semibold" style={{ maxWidth:'26rem' }}>CODE WHAT YOU CANT</h1>

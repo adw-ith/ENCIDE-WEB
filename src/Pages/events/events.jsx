@@ -3,7 +3,7 @@ import image from './image.png';
 
 function EventComponent(){
     return(
-        <section className='evnts'>
+        <section id='events' className='evnts'>
         <div className='top'>
             <div className='heading'>
                 <p className='title'>EVENTS</p>

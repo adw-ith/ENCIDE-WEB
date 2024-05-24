@@ -23,7 +23,7 @@ export default function Faqnews()
                 </div>
             </div>
         </div>
-        <div className=' col-span-1 p-4 bg-slate-700'>
+        <section id='contact'className=' col-span-1 p-4 bg-slate-700'>
             <div className=' p-4 pt-8 w-full '>
         <h1 className=' text-center text-5xl text-white font-semibold '>Contact Us</h1>
        <form action="" className='pb-8 p-3 text-white bg-transparent grid gap-3 shadow-2xl rounded-lg mt-5 '>
@@ -34,7 +34,7 @@ export default function Faqnews()
        <button className=' rounded-md max-w-28 mt-6 h-14 bg-slate-800 hover:bg-slate-900 ease-in-out duration-500  text-lg font-semibold hover:text-2xl p-2 px-3 text-white' type="submit">submit</button>
        <p className=" pt-4 opacity-75">send us a hi</p></form>
         </div>
-        </div>
+        </section>
 
     </section>
 }

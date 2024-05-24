@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import AboutComponent from "./Pages/about/About";
+import AboutComponent from "./Pages/about/About.jsx";
 import Faqnews from "./Pages/Faqnews/page";
 import Hero from "./Pages/hero/page";
 import Loader from "./Pages/loader/page";
@@ -13,10 +13,12 @@ function App() {
   {load&& <Loader/>}
   <NavComponent/>
     <Hero loading={()=>setLoad(false)}/>
-   <AboutComponent/>
-   
+  
+  <AboutComponent/>
+ 
   <Practice/>
   <Faqnews/></>;
+
 }
 
 export default App;

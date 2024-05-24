@@ -5,7 +5,7 @@ import rocket from "./Rocket.png";
 
 function AboutComponent(){
     return(
-        <section className='Abt_Us'>
+        <section id='about' className='Abt_Us'>
             <div className='abt_us_1'>
                 <div className='abt_us_cont'>
                     <h1>ABOUT US</h1>
