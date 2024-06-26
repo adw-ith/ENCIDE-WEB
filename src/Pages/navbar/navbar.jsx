@@ -1,3 +1,8 @@
+// src/Navbar.js
+import React, { useState, useEffect } from 'react';
+import './navbar.css'
+
+
 import './navbar.css';
 function NavComponent(){
 
@@ -22,6 +27,24 @@ function NavComponent(){
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
     });
 
+    const [isScrolled, setIsScrolled] = useState(false);
+      
+        useEffect(() => {
+          const handleScroll = () => {
+            if (window.scrollY > 0) {
+              setIsScrolled(true);
+            } else {
+              setIsScrolled(false);
+            }
+          };
+      
+          window.addEventListener('scroll', handleScroll);
+      
+          return () => {
+            window.removeEventListener('scroll', handleScroll);
+          };
+        }, []);
+
     let lstScrollTop = 0;
     const nav = document.querySelector('.navbar');
 
@@ -37,6 +60,7 @@ function NavComponent(){
 
     return(
         <>
+        <div className={`MobileNav ${isScrolled ? 'scrolled' : ''}`}>
         <nav className='MobileNav'>
 
             <a href="#home" className='nav_link'> 
@@ -65,6 +89,7 @@ function NavComponent(){
             </a>
 
         </nav>
+        </div>
         <nav className='navbar'>
             <div className='logo'><a href="#home">ENCIDE</a>
             </div>
@@ -77,8 +102,8 @@ function NavComponent(){
                 
             </ul>            
         </nav>
-    
-        </>
+    </>
     );
 }
 export default NavComponent
+

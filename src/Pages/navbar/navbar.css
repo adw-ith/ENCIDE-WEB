@@ -1,4 +1,22 @@
-*{
+/* src/Navbar.css */
+.MobileNav{
+    position: fixed;
+    z-index:9;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .MobileNav.scrolled {
+    transform: translateY(-91vh);
+  }
+
+  *{
     scroll-behavior: smooth;
 }
 
@@ -85,8 +103,8 @@
     height:70px;
     width:100%;
     overflow-x:auto;
-    transition: all 0.5s ease-in-out,opacity 0.6s;
-    opacity:1;
+    transition: all 0.5s;
+    opacity :1;
 }
 
 .MobileNav.hidden{
@@ -148,3 +166,5 @@
     
 }
 
+
+  
