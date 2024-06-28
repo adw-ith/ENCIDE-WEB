@@ -27,24 +27,7 @@ function NavComponent(){
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
     });
 
-    const [isScrolled, setIsScrolled] = useState(false);
-      
-        useEffect(() => {
-          const handleScroll = () => {
-            if (window.scrollY > 0) {
-              setIsScrolled(true);
-            } else {
-              setIsScrolled(false);
-            }
-          };
-      
-          window.addEventListener('scroll', handleScroll);
-      
-          return () => {
-            window.removeEventListener('scroll', handleScroll);
-          };
-        }, []);
-
+    
     let lstScrollTop = 0;
     const nav = document.querySelector('.navbar');
 
@@ -60,7 +43,6 @@ function NavComponent(){
 
     return(
         <>
-        <div className={`MobileNav ${isScrolled ? 'scrolled' : ''}`}>
         <nav className='MobileNav'>
 
             <a href="#home" className='nav_link'> 
@@ -89,15 +71,14 @@ function NavComponent(){
             </a>
 
         </nav>
-        </div>
         <nav className='navbar'>
             <div className='logo'><a href="#home">ENCIDE</a>
             </div>
             <ul className='nav_main'>
-                <li className='home cur nav_link'><a href="#home">HOME</a></li>
-                <li className='about cur nav_link'><a href='#about'>ABOUT</a></li>
-                <li className='team cur nav_link'><a href="#">TEAM</a></li>
-                <li className='contact cur nav_link'><a href="#contact">CONTACT</a></li>
+                <li className='cur nav_link'><a href="#home">HOME</a></li>
+                <li className='cur nav_link'><a href='#about'>ABOUT</a></li>
+                <li className='cur nav_link'><a href="#">TEAM</a></li>
+                <li className='cur nav_link'><a href="#contact">CONTACT</a></li>
                 <li className='events nav_link'><li className='in_bord'><a href="#events" className='nav_link'>EVENTS</a></li></li>
                 
             </ul>            

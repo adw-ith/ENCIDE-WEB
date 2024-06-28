@@ -1,22 +1,4 @@
-/* src/Navbar.css */
-.MobileNav{
-    position: fixed;
-    z-index:9;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .MobileNav.scrolled {
-    transform: translateY(-91vh);
-  }
-
-  *{
+*{
     scroll-behavior: smooth;
 }
 
@@ -49,9 +31,6 @@
     font-size:36px;
     text-align: center;
     background-color: transparent;
-}
-
-.logo:hover{
     text-shadow: -5px 5px 10px rgba(154,0,179,1);
 }
 
@@ -88,7 +67,7 @@
 
 
 .cur:hover,.active{
-    color:rgb(201, 160, 207); 
+    color:rgb(219, 134, 233);
 }
 
 
@@ -107,9 +86,6 @@
     opacity :1;
 }
 
-.MobileNav.hidden{
-    opacity:0;
-}
 
 .nav_link{
     overflow:hidden;
@@ -126,12 +102,14 @@
 .nav_link:hover,.active{
     .icons{
         fill:#ECD7D7;
+        
         transition: 0.2s ease-in-out;
         scale:1.2;
     }
     .icontext{
         color:blueviolet;
         transition: 0.2s ease-in-out;
+        text-shadow: 20px 20px 20px 20px white;
     }
 }
 
@@ -159,11 +137,16 @@
         position:fixed;
         z-index:900;
         bottom:0%;
-        margin:0px;
+        animation:transform 0.2s 1;
     }
-
-
-    
+    @keyframes transform{
+        from{
+            bottom:-10%;
+        }
+        to{
+            bottom:0%;
+        }
+    };
 }
 
 
