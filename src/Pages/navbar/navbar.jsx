@@ -32,7 +32,6 @@ function NavComponent(){
         };
     }, []);
     
-
     return(
         <>
         <div className={`navbar-container ${scrollDirection === 'up' ? 'scrolled-up' : 'scrolled-down'}`}>

@@ -240,6 +240,7 @@ const Teamcarousel = () => {
               </div>
             </div>   
         </div>
+        
         <button className="carousel-button carousel-button--left" onClick={prevSlide}>&lt;</button>
         <button className="carousel-button carousel-button--right" onClick={nextSlide}>&gt;</button>
         </div>
