@@ -29,7 +29,7 @@ const Teamcarousel = () => {
         <h1>Meet the Team</h1>
         <div className="carousel">
         <div className="carousel-track" ref={trackRef}>
-            <div className="carousel-item flex gap-2">
+            <div className="carousel-item">
               <div className="dir fing">
                 <div className="img dir1"></div>
                 <h2>
@@ -61,7 +61,7 @@ const Teamcarousel = () => {
               </div>
             </div>
 
-            <div className="carousel-item flex gap-2">
+            <div className="carousel-item">
               <div className="org fing">
                 <div className="img org1"></div>
                 <h2>
@@ -103,7 +103,7 @@ const Teamcarousel = () => {
             </div>
             </div>
 
-            <div className="carousel-item flex gap-2">
+            <div className="carousel-item">
               <div className="tech fing">
                 <div className="img tech1"></div>
                 <h2>
@@ -134,7 +134,7 @@ const Teamcarousel = () => {
               </div>
             </div>
 
-            <div className="carousel-item flex gap-2">
+            <div className="carousel-item">
               <div className="web fing">
                   <div className="img web1"></div>
                   <h2>
@@ -158,7 +158,7 @@ const Teamcarousel = () => {
                 </div>
             </div>
 
-            <div className="carousel-item flex gap-2">
+            <div className="carousel-item">
               <div className="des fing">
                   <div className="img des1"></div>
                   <h2>
@@ -175,7 +175,7 @@ const Teamcarousel = () => {
               </div>
             </div>
 
-            <div className="carousel-item flex gap-2">
+            <div className="carousel-item">
               <div className="doc fing">
                   <div className="img doc1"></div>
                   <h2>
@@ -199,7 +199,7 @@ const Teamcarousel = () => {
               </div>
             </div>
 
-            <div className="carousel-item flex gap-2">
+            <div className="carousel-item">
               <div className="com fing">
                   <div className="img com1"></div>
                   <h2>
@@ -223,7 +223,7 @@ const Teamcarousel = () => {
               </div>
             </div>
 
-            <div className="carousel-item flex gap-2">
+            <div className="carousel-item">
               <div className="mp fing">
                   <div className="img mp1"></div>
                   <h2>
