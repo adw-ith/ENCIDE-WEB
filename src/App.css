@@ -1,89 +1,76 @@
-*
-{
-    margin: 0;
+* {
+  margin: 0;
 }
-.hero
-{
-    display: grid;
-    grid-template-areas: "left right right";
-    background:url('assets/images/bgmain.png');
-   height: 100dvh;
-  
+.hero {
+  display: grid;
+  grid-template-areas: "left right right";
+  background: url("assets/images/bgmain.png");
+  background-size: cover;
+  height: 100dvh;
 }
 
-.hero-left
-{
-    grid-area:left;
-    display: flex;
+.hero-left {
+  grid-area: left;
+  display: flex;
   padding-left: 4rem;
-   align-items: center;
+  align-items: center;
 }
-.hero-left div{
-    font-family: monospace;
-    font-size: 2.5rem;
+.hero-left div {
+  font-family: monospace;
+  font-size: 2.5rem;
 }
-.hero-left div div{
-    margin-top: 2rem;
-    border: solid .2rem #9A00B3;
-    color: white;
-    border-radius: .5rem;
-    padding: .3rem;
-   
-    background: none;
-    width:fit-content;
+.hero-left div div {
+  margin-top: 2rem;
+  border: solid 0.2rem #9a00b3;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+
+  background: none;
+  width: fit-content;
 }
-.hero-left div div button{
-   background: none;
-   color: white;
-   border: none;
-   font-size: large;
-   padding-left: 1.8rem;
-   padding-right: 1.8rem;
+.hero-left div div button {
+  background: none;
+  color: white;
+  border: none;
+  font-size: large;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
 }
-.hero-left div div button:hover 
-{
-    background: #9A00B3 ;
+.hero-left div div button:hover {
+  background: #9a00b3;
 }
-.hero-right
-{
-   /* position: absolute;
+.hero-right {
+  /* position: absolute;
    right: 0px;
    height: 100%;
    width: 50%; */
-   grid-area: right;
-    background: url('assets/images/encide.png');
-    background-repeat: no-repeat;
-    background-position: center;
+  grid-area: right;
+  background: url("assets/images/encide.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.hero-right iframe
-{
-    width: 100%;
-    height: 100%;
+.hero-right iframe {
+  width: 100%;
+  height: 100%;
 }
 @media screen and (max-width: 900px) {
-    .hero
-{
-   
+  .hero {
     grid-template-areas: "right";
-   
-}
-.hero-left
-{
-grid-area: right;
-   display: flex;
-   justify-content: center;
-   padding-left: 1rem;
+  }
+  .hero-left {
+    grid-area: right;
+    display: flex;
+    justify-content: center;
+    padding-left: 1rem;
     position: relative;
     z-index: 100;
-}
-.hero-left div{
-    
+  }
+  .hero-left div {
     font-size: 2rem;
-}
-.hero-right
-{
-  opacity: .7;
+  }
+  .hero-right {
+    opacity: 0.7;
     background: none;
-}
-
+  }
 }
