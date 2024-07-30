@@ -2,6 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
-    background-color: #121212;
+:root {
+  background-color: #121212;
+}
+
+.blur-0 {
+  filter: blur(0);
+}
+
+.blur-sm {
+  filter: blur(2px);
+}
+
+.blur-md {
+  filter: blur(5px);
+}
+
+.blur-lg {
+  filter: blur(8px);
+}
+
+.transition-all {
+  transition: filter 0.3s, transform 0.3s;
+}
+.event-carousel img {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+@keyframes fadeOutRight {
+  0% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  50% {
+    transform: translate3d(100%, 0, 0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 0;
+  }
+}
+
+.event-carousel .one.fade-out {
+  animation: fadeOutRight 0.5s forwards;
+}
+
+.event-carousel .two.fade-out {
+  transform: scale(1) translateX(50%);
+  opacity: 1;
 }
