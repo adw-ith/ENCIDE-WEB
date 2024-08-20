@@ -7,6 +7,7 @@ import Hero from "./Pages/hero/page";
 import Loader from "./Pages/loader/page";
 import NavComponent from "./Pages/navbar/navbar";
 import Practice from "./Pages/Practice/Practice";
+import Teams from "./Pages/Teams/teams.jsx";
 
 function App() {
   const [load, setLoad] = useState(true);
@@ -18,6 +19,7 @@ function App() {
       <AboutComponent />
       <EventComponent />
       <Practice />
+      <Teams></Teams>
       <Faqnews />
     </>
   );

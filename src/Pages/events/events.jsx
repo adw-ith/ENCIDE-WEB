@@ -6,10 +6,11 @@ const images = [
     img: "/image.png",
     ename: "NAME",
     date: "DATE",
-    desc: "DESCRIPTION",
+    desc: "  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, harum?",
     venue: "VENUE",
     links: "http://",
   },
+
   {
     img: "/image2.webp",
     ename: "NAME",
@@ -117,27 +118,21 @@ function EventComponent() {
                 />
                 <div className="bg-[#7b2e87] w-[35%] p-4 scale-y-[0.85]">
                   <div className="pl-4 pb-2 text-2xl scale-y-[1.2] font-bold text-white">
-                    Event Name
+                    {images[tab].ename}
                   </div>
                   <div className="pl-4 pb-4">
-                    <div className="text-xl scale-y-[1.2] font-semibold text-slate-200">
-                      Date :{" "}
+                    <div className="text-lg scale-y-[1.2] font-semibold text-slate-200">
+                      Date : {images[tab].date}
                     </div>
-                    <div className="text-xl scale-y-[1.2] font-semibold text-slate-200">
-                      Time :{" "}
-                    </div>
-                    <div className="text-xl scale-y-[1.2] font-semibold text-slate-200">
-                      Venue :{" "}
+                    <div className="text-lg scale-y-[1.2] font-semibold text-slate-200">
+                      Venue :{images[tab].venue}
                     </div>
                   </div>
-                  <div className="pl-4 pb-4 text-xl scale-y-[1.2] font-semibold text-slate-200">
-                    Register Here :{" "}
+                  <div className="pl-4 pb-4 text-lg scale-y-[1.2] font-semibold text-slate-200">
+                    Register Here :{images[tab].links}
                   </div>
                   <div className="pl-4 pb-4 flex scale-y-[1.2] font-normal text-slate-200">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Modi recusandae rem rerum molestias magnam minus facere
-                    nesciunt eius nisi deserunt! Molestiae fuga quisquam rem
-                    iste aliquam provident ad vel cupiditate!
+                    {images[tab].desc}
                   </div>
                 </div>
               </div>
