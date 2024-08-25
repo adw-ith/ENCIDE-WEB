@@ -1,5 +1,6 @@
 import React from "react";
 import Team from "./team";
+import { teams } from "./teaminfo";
 
 export default function Teams() {
   return (
@@ -10,15 +11,18 @@ export default function Teams() {
           Meet our current execom
         </div>
       </div>
-      <div className="md:grid grid-cols-4">
-        <Team
-          name="Allen Binu"
-          className="col-span-1"
-          img="/prf.png"
-          position="Director"
-          linkedin="https://linkedin.com"
-          github="https://github.com"
-        />
+      <div className="md:grid grid-cols-4 gap-4">
+        {teams.map((team) => (
+          <Team
+            key={team.name}
+            name={team.name}
+            className="col-span-1"
+            img={team.img}
+            position={team.position}
+            linkedin={team.linkedin}
+            github={team.github}
+          />
+        ))}
       </div>
     </div>
   );

@@ -17,7 +17,7 @@ export default function Team({
   github,
 }: TeamProps) {
   return (
-    <div className="relative flex flex-col rounded-xl rounded-tl-none hover: ">
+    <div className="relative flex flex-col rounded-xl rounded-tl-none ">
       <div className="w-full bg-slate-200 flex rounded-xl rounded-tl-none items-center justify-center overflow-hidden">
         <img className="max-h-[300px] pt-4" src={img} alt={`${name}'s photo`} />
       </div>
@@ -29,7 +29,7 @@ export default function Team({
       </div>
 
       {/* Overlay div */}
-      <div className="absolute inset-0 bg-[#DB9EE5] flex items-center justify-center rounded-xl rounded-tl-none opacity-0 transition-opacity duration-300 hover:opacity-100">
+      <div className="absolute inset-0 bg-[#DB9EE5] flex items-center justify-center rounded-xl rounded-tl-none opacity-0 transition-opacity duration-1000 hover:opacity-100">
         <div className="text-white text-center p-4">
           <div>
             <h3 className="text-slate-100 text-lg font-semibold border-4 w-fit rounded-s-full rounded-e-full px-4">
