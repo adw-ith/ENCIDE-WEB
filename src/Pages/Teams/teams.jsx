@@ -4,6 +4,7 @@ import { teams } from "./teaminfo";
 
 export default function Teams() {
   return (
+    <section id="team">
     <div className=" bg-[#121212] py-10 px-20">
       <div className="heading pb-8">
         <div className="text-5xl font-semibold text-slate-200">Teams</div>
@@ -25,5 +26,6 @@ export default function Teams() {
         ))}
       </div>
     </div>
+    </section>
   );
 }
