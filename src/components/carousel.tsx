@@ -27,10 +27,7 @@ const CarouselComponent: React.FC<CarouselComponentProps> = ({ images }) => {
               <p className="description">{item.ename}</p>
               <p className="description">Date: {item.date}</p>
               <p className="description">Description: {item.desc}</p>
-              <p className="description">Venue: {item.venue}</p>
-              <a href={item.links} className="text-blue-400 font-bold">
-                Register
-              </a>
+
             </div>
           </div>
         ))}
