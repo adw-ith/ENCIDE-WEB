@@ -1,0 +1,10 @@
+
+.carousel-image {
+    transition: opacity 0.5s ease-in-out; 
+    opacity: 0;                            
+  }
+  
+  .carousel-image.active {
+    opacity: 1;                      
+  }
+  

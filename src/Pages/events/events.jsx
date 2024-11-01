@@ -1,49 +1,86 @@
 import { useState, useEffect } from "react";
 import CarouselComponent from "../../components/carousel";
 
+import icl2 from "../../assets/images/icl2.jpg"
+import cloneitup from "../../assets/images/cloneitup.jpg"
+import ace from "../../assets/images/aceplacements.jpg"
+import code2 from "../../assets/images/code2job.jpg"
+import ctf from "../../assets/images/ctf.jpg"
+import dsa from "../../assets/images/dsa-blitz.jpg"
+import encode from "../../assets/images/encode.jpg"
+import excite from "../../assets/images/excite.jpg"
+import tech from "../../assets/images/tech-trial.jpg"
+import turtle from "../../assets/images/turtle.jpg"
+
 const images = [
   {
     img: "/image.png",
-    ename: "NAME",
-    date: "DATE",
-    desc: "  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, harum?",
-    venue: "VENUE",
-    links: "http://",
-  },
-
-  {
-    img: "/image2.webp",
-    ename: "NAME",
-    date: "DATE",
-    desc: "DESCRIPTION",
-    venue: "VENUE",
-    links: "http://",
+    ename: "DAWN 1.0",
+    date: "22 MAY 2023",
+    desc: "Intro to CP basics",
   },
   {
-    img: "/image3.webp",
-    ename: "NAME",
-    date: "DATE",
-    desc: "DESCRIPTION",
-    venue: "VENUE",
-    links: "http://",
+    img: icl2,
+    ename: "Interclass Coding League",
+    date: "22 JULY 2024",
+    desc: "Interclass coding competition",
   },
   {
-    img: "/image4.webp",
-    ename: "NAME",
-    date: "DATE",
-    desc: "DESCRIPTION",
-    venue: "VENUE",
-    links: "http://",
+    img: cloneitup,
+    ename: "CloneItUp",
+    date: "11 SEPTEMBER 2024",
+    desc: "Beginner coding challenge",
   },
   {
-    img: "/image5.webp",
-    ename: "NAME",
-    date: "DATE",
-    desc: "DESCRIPTION",
-    venue: "VENUE",
-    links: "http://",
+    img: ace,
+    ename: "Strategies to Ace Placements",
+    date: "JULY 31",
+    desc: "Placement preparation strategies",
+  },
+  {
+    img: code2,
+    ename: "Code2Job",
+    date: "AUG 7",
+    desc: "Career-focused coding event",
+  },
+  {
+    img: ctf,
+    ename: "CaptureTheFlag",
+    date: "17 AUGUST 2024",
+    desc: "CTF hacking challenge",
+  },
+  {
+    img: dsa,
+    ename: "DSA Blitz",
+    date: "AUGUST 3",
+    desc: "Quick DSA practice",
+  },
+  {
+    img: encode,
+    ename: "XTREME ENCODE",
+    date: "22 JULY 2024",
+    desc: "Advanced encoding contest",
+  },
+  {
+    img: excite,
+    ename: "EXCITE",
+    date: "12 APRIL 2024",
+    desc: "Exciting tech showdown",
+  },
+  {
+    img: tech,
+    ename: "TECH TRIAL",
+    date: "27 SEPTEMBER 2024",
+    desc: "Tech skills competition",
+  },
+  {
+    img: turtle,
+    ename: "TURTLE POOKALAM",
+    date: "18 SEPTEMBER 2024",
+    desc: "Cultural design contest",
   },
 ];
+
 
 function EventComponent() {
   const [tab, setTab] = useState(0);
@@ -98,7 +135,7 @@ function EventComponent() {
       </div>
       {screen && (
         <div>
-          <div className="event-carousel flex  relative overflow-hidden h-[60vh]">
+          <div className="event-carousel flex relative overflow-hidden h-[60vh]">
             <div className="relative h-full w-full flex items-center justify-center">
               <div className="w-full absolute left-[25%] flex">
                 <img
@@ -117,21 +154,16 @@ function EventComponent() {
                   alt="Event"
                 />
                 <div className="bg-[#7b2e87] w-[35%] p-4 scale-y-[0.85]">
-                  <div className="pl-4 pb-2 text-2xl scale-y-[1.2] font-bold text-white">
+                  <div className="pl-4 pb-2 text-2xl scale-y-[1.2] font-arial font-bold text-white">
                     {images[tab].ename}
                   </div>
                   <div className="pl-4 pb-4">
-                    <div className="text-lg scale-y-[1.2] font-semibold text-slate-200">
+                    <div className="text-lg scale-y-[1.2] font-arial font-semibold text-slate-200">
                       Date : {images[tab].date}
                     </div>
-                    <div className="text-lg scale-y-[1.2] font-semibold text-slate-200">
-                      Venue :{images[tab].venue}
-                    </div>
                   </div>
-                  <div className="pl-4 pb-4 text-lg scale-y-[1.2] font-semibold text-slate-200">
-                    Register Here :{images[tab].links}
-                  </div>
-                  <div className="pl-4 pb-4 flex scale-y-[1.2] font-normal text-slate-200">
+                 
+                  <div className="pl-4 pb-4 flex scale-y-[1.2]  font-mono font-normal text-slate-200">
                     {images[tab].desc}
                   </div>
                 </div>

@@ -1,0 +1,82 @@
+.registration-form {
+    max-width: 100vh;
+    width:90%;
+    max-width:800px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid rgba(195, 4, 144, 0.731);
+    box-shadow:0px 0px 80px violet;
+    border-radius: 8px;
+    background-color: black;
+  }
+  
+  .registration-form h2 {
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    font-size:32px;
+    text-transform: uppercase;
+    text-shadow: -1px 0px 10px rgba(255, 255, 255, 0.584);
+    margin-bottom: 20px;
+    color:palevioletred;
+  }
+  
+  .registration-form section {
+    margin-bottom: 20px;
+  }
+  
+  .registration-form h3 {
+    font-size: 1.2em;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:600 ;
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .registration-form input[type="text"],
+  .registration-form input[type="email"],
+  .registration-form input[type="tel"],
+  .registration-form input[type="date"],
+  .registration-form input[type="url"],
+  .registration-form textarea,
+  .registration-form select {
+    width: 100%;
+    padding: 8px;
+    margin: auto 0;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
+  .registration-form textarea {
+    resize: vertical;
+  }
+  
+  .registration-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color:white;
+  }
+  
+  .registration-form div {
+    margin: 10px 0;
+  }
+  
+  .registration-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: darkmagenta;
+    color: white;
+    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .registration-form button:hover {
+    background-color: violet;
+    transition:all 0.2s ease-in;
+  }
+  

@@ -1,144 +1,146 @@
-.Abt_Us {
+.Abt_Us{
   box-sizing: border-box;
-  padding: 5rem;
+  padding:5rem;
   display: flex;
+  flex-direction: column;
   color: aliceblue;
 }
 
-.abt_us_1 {
+.abt_us_1{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom:2rem;
 }
 
-.abt_us_cont h1 {
-  font-size: 40px;
+.abt_us_cont h1{
+  font-size:40px;
   font-weight: 550;
-  margin-bottom: 2rem;
+  margin-bottom:2rem;
 }
 
-.grpic {
-  width: 90%;
+.grpic{
   max-width: 700px;
-  max-height: 200px;
-  box-shadow: 2px 2px rgba(0, 0, 0, 0.449), 10px 10px rgba(0, 0, 0, 0.071),
-    20px 20px rgba(255, 255, 255, 0.804);
+  max-height:200px;
+  box-shadow: 
+      2px 2px rgba(0, 0, 0, 0.449),
+      10px 10px rgba(0, 0, 0, 0.071) , 
+      20px 20px rgba(255, 255, 255, 0.804);
   filter: drop-shadow(0px 6px 40px #ba0a8e35);
-  border-radius: 5px;
-  margin-left: 2rem;
+  border-radius:5px;
+  margin-left:2rem;
 }
 
-.abt_us_2 {
-  width: 100%;
-  margin-top: 3rem;
+.abt_us_2{
+  margin-top:3rem;
   display: flex;
   justify-content: space-around;
   flex-wrap: nowrap;
   align-items: center;
-  gap: 1em;
+  gap:0.5em;
 }
 
-.box {
-  width: 40%;
-  height: 90%;
-  color: #000000;
+.box{
+  width:400px;
+  color:#000000;
   display: flex;
   filter: drop-shadow(0px 6px 40px #ba0a8e35);
   flex-direction: column;
   align-items: center;
   flex-wrap: nowrap;
-  padding: 3.5rem;
+  padding:45px;
   background: rgba(219, 158, 229, 0.9);
   border-radius: 200px;
   text-align: left;
-  font-weight: 600;
+  font-weight:600;
 }
 
 .icon {
-  margin-top: -2rem;
-  margin-bottom: 0.6rem;
+  margin-top:-2rem;
+  margin-bottom:0.6rem;
   width: 72px;
   height: 68px;
-  background-color: rgba(219, 158, 229, 0.1);
+  background-color:rgba(219, 158, 229, 0.1) ;
   background-blend-mode: multiply;
 }
 
-.rkt_icon {
-  background-image: url(Rocket.png);
-}
+.rkt_icon {background-image: url(Rocket.png);}
 
-.eye_icon {
-  background-image: url(Eye.png);
-}
+.eye_icon {background-image: url(Eye.png);}
 
-.box h2 {
+.box h2{
   margin-bottom: 1rem;
   font-style: normal;
+  font-size:36px;
+  font-weight: 600;
+  line-height: 44px;
   text-align: center;
   background-color: transparent;
-  color: #1a021e;
+  color: #1A021E;
 }
 
-@media (max-width: 768px) {
-  .Abt_Us {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 3rem;
-    padding: 0px;
-    box-sizing: border-box;
-    font-size: 24px;
-    font-family: Inter;
+
+@media(max-width:768px){
+
+  .Abt_Us{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin:3rem;
+      padding:0px;
+      box-sizing: border-box;
+      font-size: 24px;
+      font-family: Inter;
+      
   }
 
-  .abt_us_1 {
-    margin-bottom: 5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
+  .abt_us_1{
+      margin-bottom:5rem;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
   }
 
-  .abt_us_1 h1 {
-    text-align: center;
+  .abt_us_1 h1{
+      text-align: center;
   }
 
   .abt_us_cont {
-    margin-bottom: 2rem;
-    text-align: justify;
-    font-size: 1rem;
+      margin-bottom: 2rem;
+      text-align:justify;
+      font-size:1rem;
   }
 
-  .grpic {
-    width: 80%;
-    min-width: 100px;
-    max-width: 350px;
-    margin: 0px;
+  .grpic{
+      width:80%;
+      min-width:100px;
+      max-width:350px;
+      margin:0px;
   }
 
-  .abt_us_2 {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .abt_us_2{
+      margin-top:2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
   }
 
-  .box {
-    width: 60%;
-    padding: 2rem;
-    min-width: 300px;
-    font-size: 15px;
-    text-align: center;
+  .box{
+      width:200px;
+      padding:2rem;
+      min-width:300px;
+      font-size:15px;
+      text-align: center;
   }
 
-  .box h1 {
-    font-size: 25px;
+  .box h1{
+      font-size:25px;
   }
 }
 
-@media (min-width: 768px) {
+@media(min-width:768px){
+
 }

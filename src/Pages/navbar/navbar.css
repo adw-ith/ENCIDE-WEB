@@ -133,6 +133,7 @@
   .navbar {
     display: none;
   }
+
   .MobileNav {
     display: flex;
     position: fixed;
@@ -141,7 +142,7 @@
   }
 
   .scrolled-up .MobileNav {
-    transform: translateY(89vh);
+    transform: translateY(87vh);
   }
 
   .scrolled-down .MobileNav {
