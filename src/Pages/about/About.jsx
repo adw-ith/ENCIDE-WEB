@@ -7,7 +7,7 @@ function AboutComponent(){
             <div className='abt_us_1'>
                 <div className='abt_us_cont'>
                     <h1>ABOUT US</h1>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    <p>Our community brings together passionate programmers creating a vibrant ecosystem of knowledge sharing and skill development.Engage in challenging coding competitions, hackathons, and coding challenges that push your limits and help you become a better programmer.</p>
                 </div>
                 <img className='grpic' src={grpic} alt='grpic'></img>
             </div>
@@ -15,12 +15,13 @@ function AboutComponent(){
                 <div className='mission box'>
                     <div className='rkt_icon icon'></div>
                     <h2>OUR MISSION</h2>
-                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.
+                    ENCIDE, the premier coding club of Mar Athanasius College of Engineering, is dedicated to fostering a community of passionate coders, developers, and tech enthusiasts.
                 </div>
                 <div className='vision box'>
                     <div className='eye_icon icon'></div>
                     <h2>OUR VISION</h2>
-                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.
+                    
+ The club provides a supportive and inclusive peer-to-peer learning environment where members can share knowledge, exchange ideas, and work together on exciting coding projects.
                 </div>
             </div>
         </section>
