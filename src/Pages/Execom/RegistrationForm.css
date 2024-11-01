@@ -23,6 +23,7 @@
 }
 
 .registration-form p{color:white;}
+
 .registration-form section {
   margin-bottom: 20px;
 }
@@ -30,10 +31,24 @@
 .registration-form h3 {
   font-size: 1.2em;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+    "Lucida Sans", Arial, sans-se rif;
   font-weight: 600;
   margin-bottom: 10px;
   color: white;
+}
+
+input:active,select:active,textarea:active{
+  outline:3px solid  rgba(255, 0, 255, 0.591);
+  border:none;
+}
+
+input:focus,select:focus,textarea:focus{
+  outline:3px solid  rgba(255, 0, 255, 0.591);
+  border:none;
+}
+
+label input,label input:active,label input:focus{
+  outline:none;
 }
 
 .registration-form input[type="text"],
