@@ -76,6 +76,7 @@ function RegistrationForm({ onLoad }) {
           onChange={handleChange}
           required
         />
+        <p>Date of Birth</p>
         <input
           type="date"
           name="dob"
