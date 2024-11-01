@@ -79,6 +79,7 @@ function RegistrationForm({ onLoad }) {
         <input
           type="date"
           name="dob"
+          placeholder="Date Of Birth"
           value={formData.dob}
           onChange={handleChange}
           onBlur={(e) => e.target.blur()}
@@ -137,7 +138,7 @@ function RegistrationForm({ onLoad }) {
           <option value="Web Team">Web Team</option>
           <option value="Events Team">Events Team</option>
           <option value="Sponsorship and Partnership Team">
-            Sponsorship and Partnership Team
+          Partnership and Collaboration Team
           </option>
           <option value="Media Team">Media Team</option>
           <option value="Community Engagement Team">
@@ -157,7 +158,7 @@ function RegistrationForm({ onLoad }) {
           <option value="Web Team">Web Team</option>
           <option value="Events Team">Events Team</option>
           <option value="Sponsorship and Partnership Team">
-            Sponsorship and Partnership Team
+          Partnership and Collaboration Team
           </option>
           <option value="Media Team">Media Team</option>
           <option value="Community Engagement Team">
