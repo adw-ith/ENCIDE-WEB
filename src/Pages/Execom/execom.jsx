@@ -220,6 +220,7 @@ function RegistrationForm({ onLoad }) {
           value={formData.clubCommitments}
           onChange={handleChange}
         />
+        <h3>How Many Hours can you commit to Execom Works?</h3>
         <div>
           <label>
             <input
@@ -274,22 +275,22 @@ function RegistrationForm({ onLoad }) {
       </section>
 
       <section>
-        <h3>6. Motivation and Goals</h3>
+        <h3>7. Motivation and Goals</h3>
         <textarea
           name="motivation"
-          placeholder="What inspired you to apply?"
+          placeholder="What inspired you to apply for ENCIDE?"
           value={formData.motivation}
           onChange={handleChange}
         />
         <textarea
           name="growthVision"
-          placeholder="How do you see yourself growing?"
+          placeholder="How do you see yourself growing personally and professionally by being a part of the Execom?"
           value={formData.growthVision}
           onChange={handleChange}
         />
         <textarea
           name="initiativeExample"
-          placeholder="Describe a time you took initiative"
+          placeholder="Describe a time when you took the initiative in a group setting. What was the outcome?"
           value={formData.initiativeExample}
           onChange={handleChange}
         />
