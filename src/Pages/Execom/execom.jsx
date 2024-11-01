@@ -177,18 +177,21 @@ function RegistrationForm({ onLoad }) {
           placeholder="Why did you choose your preferences?"
           value={formData.whyChooseRoles}
           onChange={handleChange}
+          required
         />
         <textarea
           name="uniqueSkills"
           placeholder="What unique skills do you bring?"
           value={formData.uniqueSkills}
           onChange={handleChange}
+          required
         />
         <textarea
           name="contributionVision"
           placeholder="How do you envision contributing?"
           value={formData.contributionVision}
           onChange={handleChange}
+          required
         />
       </section>
 
@@ -199,18 +202,21 @@ function RegistrationForm({ onLoad }) {
           placeholder="Relevant Skills"
           value={formData.skills}
           onChange={handleChange}
+          required
         />
         <textarea
           name="experience"
           placeholder="Previous Experience (if any)"
           value={formData.experience}
           onChange={handleChange}
+          required
         />
         <textarea
           name="projects"
           placeholder="Hackathons/Projects"
           value={formData.projects}
           onChange={handleChange}
+          required
         />
       </section>
 
@@ -221,6 +227,7 @@ function RegistrationForm({ onLoad }) {
           placeholder="Other club commitments?"
           value={formData.clubCommitments}
           onChange={handleChange}
+          required
         />
         <h3>How Many Hours can you commit to Execom Works?</h3>
         <div>
@@ -283,18 +290,21 @@ function RegistrationForm({ onLoad }) {
           placeholder="What inspired you to apply for ENCIDE?"
           value={formData.motivation}
           onChange={handleChange}
+          required
         />
         <textarea
           name="growthVision"
           placeholder="How do you see yourself growing personally and professionally by being a part of the Execom?"
           value={formData.growthVision}
           onChange={handleChange}
+          required
         />
         <textarea
           name="initiativeExample"
           placeholder="Describe a time when you took the initiative in a group setting. What was the outcome?"
           value={formData.initiativeExample}
           onChange={handleChange}
+          required
         />
       </section>
 
