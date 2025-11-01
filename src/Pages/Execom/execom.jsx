@@ -31,6 +31,8 @@ function RegistrationForm({ onLoad }) {
     confirmation: false,
   });
 
+   const [showLink, setShowLink] = useState(false); 
+
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setFormData({
@@ -43,7 +45,7 @@ function RegistrationForm({ onLoad }) {
     e.preventDefault();
     try {
       const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbw47O4CDbu9Y9x9pJ47JRjys86Rbb5lTkdAlGjQAQUB_-I8OchDUMLM_kyx-4unzmr0/exec",
+        "https://script.google.com/macros/s/AKfycbwtYJ3conKnhZmrsladaUw19s_nDz18hDrR90I-tL3mlXvX2-00p_zmdToMD3Gc4Y7qzQ/exec",
         {
           method: "POST",
           body: new URLSearchParams(formData),
@@ -52,6 +54,7 @@ function RegistrationForm({ onLoad }) {
 
       if (response.ok) {
         alert("Application Submitted!");
+        setShowLink(true);
         console.log(await response.text());
       } else {
         alert("There was an error submitting your application.");
@@ -63,7 +66,7 @@ function RegistrationForm({ onLoad }) {
   };
 
   return (
-    <form className="registration-form">
+    <form className="registration-form" >
       <h2>Execom Application Form</h2>
 
       <section>
@@ -323,6 +326,20 @@ function RegistrationForm({ onLoad }) {
       </section>
 
       <button onClick={handleSubmit}>Submit Application</button>
+
+      {showLink && (
+        <p style={{ marginTop: "20px", textAlign: "center" }}>
+           Thank you for applying! <br />
+          <a
+            href="https://chat.whatsapp.com/your-group-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "#25D366", fontWeight: "bold" }}
+          >
+            👉 Click here to join the WhatsApp group
+          </a>
+        </p>
+      )}
     </form>
   );
 }
